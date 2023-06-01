@@ -1,18 +1,17 @@
 from flask import Flask, request, render_template
 import os
 import requests, json
-from dotenv import load_dotenv
+
 
 global translator_endpoint    
 global cog_key    
 global cog_region
 
 try:
-    load_dotenv()
+
     cog_key = os.environ.get("COG_SERVICE_KEY")
     cog_region = os.environ.get("COG_SERVICE_REGION")      
-    print(cog_key )
-    print(cog_region )
+
     translator_endpoint = 'https://api.cognitive.microsofttranslator.com'   
 except Exception as ex:        
     print(ex)
@@ -49,7 +48,12 @@ def home():
 
         return render_template('home.html', translated_text=translated_text,lang_detected=detected)
     
+    
     return render_template('home.html')
+@app.route('/about.html')
+def about():
+    pass
+    
 
 def GetLanguage(text):
 
