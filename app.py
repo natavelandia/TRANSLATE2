@@ -46,10 +46,10 @@ def home():
         #if source_language=="en"
 
 
-        return render_template('home.html', translated_text=translated_text,lang_detected=detected)
+        return render_template('index.html', translated_text=translated_text,lang_detected=detected)
     
     
-    return render_template('home.html')
+    return render_template('index.html')
 @app.route('/about.html')
 def about():
     pass
