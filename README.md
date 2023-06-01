@@ -8,9 +8,12 @@ Este proyecto exhibe la implementación de una aplicación web utilizando Flask.
 - `Funcionalidad 1`: Detecta el idioma del texto 1
 - `Funcionalidad 2`: Traduce texto 2
 
+# :heavy_check_mark: Uso del modelo desplegado en Azure
+ ```shell
+https://velandiados.azurewebsites.net/
+```
 
-
-# 🛠️ Abre y ejecuta el proyecto
+# 🛠️ Abre y ejecuta el proyecto local
 
 **Después de clonado el repositorio**
 - Crea y activa un ambiente:
