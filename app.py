@@ -57,9 +57,9 @@ def home():
         #if source_language=="en"
 
 
-        return render_template('propio.html', translated_text=translated_text,lang_detected=detected)
+        return render_template('index.html', translated_text=translated_text,lang_detected=detected)
     
-    return render_template('propio.html')
+    return render_template('index.html')
 
 def GetLanguage(text):
 
