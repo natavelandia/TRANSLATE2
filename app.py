@@ -25,7 +25,7 @@ try:
 except Exception as ex:        
     print(ex)
 
-app = Flask(__name__)
+
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
