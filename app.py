@@ -54,7 +54,7 @@ def home():
 def about():
     pass
     
-
+@app.route('/')
 def GetLanguage(text):
 
         # Use the Translator detect function
@@ -85,7 +85,7 @@ def GetLanguage(text):
     
 
     return language
-
+@app.route('/')
 def Translate(text, source_language, language):
     # Use the Translator translate function
     path = '/translate'
