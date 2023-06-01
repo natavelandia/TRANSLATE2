@@ -13,9 +13,7 @@ app= Flask (__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/about.html')
-def about():
-    pass
+
 
 try:
     load_dotenv()
